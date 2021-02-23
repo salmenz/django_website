@@ -1,0 +1,9 @@
+{%if articles%}
+<ul>
+    {% for a in articles %}
+    <li><a href="/article/{{a.id}}">{{a.name}}</a></li>
+    {%endfor%}
+</ul>
+{%else%}
+    <h3>you don't have any articles</h3>
+{%endif%}
